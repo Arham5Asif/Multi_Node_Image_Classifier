@@ -8,6 +8,7 @@ import Jobs from "./pages/Jobs";
 import CAD from "./pages/CAD";
 import Models from "./pages/Models";
 import Settings from "./pages/Settings";
+import WorkerDetails from "./pages/WorkerDetails";
 
 export default function App() {
   return (
@@ -16,6 +17,8 @@ export default function App() {
         <Route index element={<Dashboard />} />
 
         <Route path="workers" element={<Workers />} />
+
+        <Route path="workers/:id" element={<WorkerDetails />} />
 
         <Route path="jobs" element={<Jobs />} />
 
