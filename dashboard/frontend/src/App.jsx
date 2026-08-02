@@ -9,6 +9,7 @@ import CAD from "./pages/CAD";
 import Models from "./pages/Models";
 import Settings from "./pages/Settings";
 import WorkerDetails from "./pages/WorkerDetails";
+import JobDetails from "./pages/JobDetails";
 
 export default function App() {
   return (
@@ -17,10 +18,10 @@ export default function App() {
         <Route index element={<Dashboard />} />
 
         <Route path="workers" element={<Workers />} />
-
         <Route path="workers/:id" element={<WorkerDetails />} />
 
         <Route path="jobs" element={<Jobs />} />
+        <Route path="jobs/:id" element={<JobDetails />} />
 
         <Route path="cad" element={<CAD />} />
 

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 export default function JobCard({
   id,
   image,
@@ -8,10 +10,16 @@ export default function JobCard({
   confidence,
   executionTime,
 }) {
+  const navigate = useNavigate();
+
   const statusClass = status.toLowerCase();
 
   return (
-    <div className="job-card">
+    <div
+      className="job-card"
+      onClick={() => navigate(`/jobs/${id}`)}
+      style={{ cursor: "pointer" }}
+    >
       <div className="job-header">
         <h3>Job #{id}</h3>
 
