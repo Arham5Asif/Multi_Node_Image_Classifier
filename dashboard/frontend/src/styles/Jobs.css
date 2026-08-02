@@ -131,3 +131,39 @@
   margin-top: 6px;
   font-size: 14px;
 }
+
+.job-card {
+  cursor: pointer;
+}
+
+.job-card:hover {
+  border-color: #2563eb;
+}
+
+.job-status {
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+.job-status.completed {
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+.job-status.processing {
+  background: #dbeafe;
+
+  color: #1d4ed8;
+}
+
+.job-status.failed {
+  background: #fee2e2;
+
+  color: #dc2626;
+}

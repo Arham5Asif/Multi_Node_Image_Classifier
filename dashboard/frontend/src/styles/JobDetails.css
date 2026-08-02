@@ -413,3 +413,17 @@
 
   align-items: start;
 }
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 14px;
+}
+
+table tr:nth-child(even) {
+  background: #f8fafc;
+}

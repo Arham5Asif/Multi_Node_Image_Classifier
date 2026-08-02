@@ -214,3 +214,11 @@
 .heartbeat {
   margin-top: 15px;
 }
+
+.worker-card {
+  cursor: pointer;
+}
+
+.worker-card:hover {
+  border-color: #2563eb;
+}

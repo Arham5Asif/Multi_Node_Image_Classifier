@@ -27,3 +27,67 @@ ul {
 button {
   cursor: pointer;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef2f7;
+}
+
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.page-container {
+  padding: 30px;
+
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-grid,
+  .job-grid,
+  .worker-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-grid,
+  .job-grid,
+  .worker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+}
