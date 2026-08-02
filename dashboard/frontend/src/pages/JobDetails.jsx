@@ -4,6 +4,13 @@ import "../styles/JobDetails.css";
 
 import JobInfo from "../components/jobs/JobInfo";
 import JobTimeline from "../components/jobs/JobTimeline";
+import JobImagePreview from "../components/jobs/JobImagePreview";
+import JobResult from "../components/jobs/JobResult";
+import JobMetrics from "../components/jobs/JobMetrics";
+import ActivityLog from "../components/jobs/ActivityLog";
+import JobPerformanceChart from "../components/jobs/JobPerformanceChart";
+import ConfidenceGauge from "../components/jobs/ConfidenceGauge";
+import ClassificationSummary from "../components/jobs/ClassificationSummary";
 
 export default function JobDetails() {
   const { id } = useParams();
@@ -39,9 +46,23 @@ export default function JobDetails() {
       </div>
 
       <div className="job-details-grid">
+        <JobImagePreview image={job.image} />
+
         <JobInfo job={job} />
 
+        <JobResult job={job} />
+
         <JobTimeline />
+
+        <JobMetrics job={job} />
+
+        <ActivityLog />
+
+        <JobPerformanceChart />
+
+        <ConfidenceGauge confidence={job.confidence} />
+
+        <ClassificationSummary job={job} />
       </div>
     </div>
   );

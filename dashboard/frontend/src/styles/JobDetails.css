@@ -171,3 +171,245 @@
     grid-template-columns: 1fr;
   }
 }
+
+.image-preview {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.image-preview img {
+  width: 100%;
+
+  border-radius: 12px;
+
+  object-fit: cover;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 20px;
+}
+
+.result-box {
+  background: #f8fafc;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  text-align: center;
+}
+
+.result-box span {
+  display: block;
+
+  font-size: 14px;
+
+  color: #6b7280;
+
+  margin-bottom: 10px;
+}
+
+.result-box h3 {
+  font-size: 24px;
+
+  color: #2563eb;
+
+  margin: 0;
+}
+
+/* Metrics */
+
+.metrics-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 18px;
+}
+
+.metric-card {
+  background: #f8fafc;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.metric-card span {
+  display: block;
+
+  font-size: 14px;
+
+  color: #6b7280;
+
+  margin-bottom: 10px;
+}
+
+.metric-card h3 {
+  margin: 0;
+
+  color: #2563eb;
+
+  font-size: 22px;
+}
+
+/* Activity Log */
+
+.activity-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.activity-item {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px;
+
+  background: #f8fafc;
+
+  border-radius: 10px;
+}
+
+.activity-time {
+  font-weight: 600;
+
+  color: #2563eb;
+}
+
+.activity-event {
+  color: #374151;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .activity-item {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 6px;
+  }
+}
+
+.recharts-responsive-container {
+  margin-top: 20px;
+}
+
+.recharts-cartesian-grid line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-wrapper {
+  font-size: 14px;
+}
+
+/* Confidence Gauge */
+
+.confidence-container {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.confidence-circle {
+  width: 180px;
+
+  height: 180px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.confidence-inner {
+  width: 130px;
+
+  height: 130px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.confidence-inner h2 {
+  margin: 0;
+
+  color: #2563eb;
+
+  font-size: 28px;
+}
+
+/* Summary Table */
+
+.summary-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.summary-table td {
+  padding: 14px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-table td:first-child {
+  font-weight: 600;
+
+  color: #374151;
+
+  width: 40%;
+}
+
+.summary-table td:last-child {
+  text-align: right;
+
+  color: #111827;
+}
+
+/* Better Grid */
+
+.job-details-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+
+  gap: 25px;
+
+  align-items: start;
+}
