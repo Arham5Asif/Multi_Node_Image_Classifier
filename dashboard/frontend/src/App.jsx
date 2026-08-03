@@ -11,6 +11,7 @@ import Settings from "./pages/Settings";
 import WorkerDetails from "./pages/WorkerDetails";
 import JobDetails from "./pages/JobDetails";
 import ModelDetails from "./pages/ModelDetails";
+import AlertDetails from "./pages/AlertDetails";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="jobs/:id" element={<JobDetails />} />
 
         <Route path="cad" element={<CAD />} />
+        <Route path="cad/:id" element={<AlertDetails />} />
 
         <Route path="models" element={<Models />} />
         <Route path="models/:name" element={<ModelDetails />} />
