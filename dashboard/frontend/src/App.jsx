@@ -10,6 +10,7 @@ import Models from "./pages/Models";
 import Settings from "./pages/Settings";
 import WorkerDetails from "./pages/WorkerDetails";
 import JobDetails from "./pages/JobDetails";
+import ModelDetails from "./pages/ModelDetails";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="cad" element={<CAD />} />
 
         <Route path="models" element={<Models />} />
+        <Route path="models/:name" element={<ModelDetails />} />
 
         <Route path="settings" element={<Settings />} />
       </Route>

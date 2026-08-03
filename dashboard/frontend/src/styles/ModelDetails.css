@@ -1,0 +1,226 @@
+.model-details-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.model-details-header h1 {
+  font-size: 34px;
+
+  margin-bottom: 8px;
+}
+
+.model-details-grid {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 25px;
+}
+
+.details-btn {
+  display: block;
+
+  margin-top: 20px;
+
+  padding: 12px;
+
+  text-align: center;
+
+  background: #2563eb;
+
+  color: white;
+
+  border-radius: 10px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.details-btn:hover {
+  background: #1d4ed8;
+}
+
+.back-link {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  color: #2563eb;
+}
+
+.model-details-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+  gap: 25px;
+}
+
+.recharts-responsive-container {
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .model-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.deploy-btn {
+  margin-top: 20px;
+
+  padding: 12px 20px;
+
+  background: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.deploy-btn:hover {
+  background: #1d4ed8;
+}
+
+.recommend-box {
+  padding: 18px;
+
+  border-radius: 12px;
+
+  margin-top: 15px;
+}
+
+.success {
+  background: #dcfce7;
+
+  border-left: 6px solid #16a34a;
+}
+
+.warning {
+  background: #fef3c7;
+
+  border-left: 6px solid #f59e0b;
+}
+
+.recommend-box ul {
+  margin: 15px 0;
+
+  padding-left: 20px;
+}
+
+.history-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin-top: 15px;
+}
+
+.history-table th,
+.history-table td {
+  padding: 12px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  text-align: left;
+}
+
+.history-table th {
+  background: #f8fafc;
+}
+
+.matrix-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin-top: 20px;
+}
+
+.matrix-table th,
+.matrix-table td {
+  padding: 15px;
+
+  border: 1px solid #d1d5db;
+
+  text-align: center;
+}
+
+.matrix-table th {
+  background: #f8fafc;
+}
+
+.placeholder-text {
+  margin-top: 20px;
+
+  color: #6b7280;
+}
+
+.roc-box {
+  height: 260px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border: 2px dashed #cbd5e1;
+
+  border-radius: 12px;
+
+  text-align: center;
+}
+
+.roc-box h3 {
+  margin: 15px 0;
+}
+
+.release-list {
+  margin-top: 20px;
+
+  padding-left: 20px;
+
+  line-height: 2;
+}
+
+.download-btn {
+  margin-top: 20px;
+
+  padding: 12px 22px;
+
+  background: #16a34a;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: #15803d;
+}
